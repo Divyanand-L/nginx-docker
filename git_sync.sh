@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Check if inside a Git repository
-if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-    echo "Error: Not a Git repository. Run 'git init' first."
-    exit 1
-fi
-
 # Prompt for commit message
 echo "Enter commit message:"
 read -r commit_message
